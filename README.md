@@ -75,4 +75,4 @@ Replace the Google Fonts link in `<head>` and update `--font-display` and `--fon
 
 - Email: zainulabdin995@gmail.com  
 - LinkedIn: https://www.linkedin.com/in/zainulabidinarain/  
-- GitHub: https://github.com/zainulabdin995
+- GitHub: https://github.com/zainulabidinarain
