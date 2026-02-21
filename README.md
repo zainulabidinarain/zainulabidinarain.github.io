@@ -33,7 +33,7 @@ your-github-username.github.io/          ← root of GitHub Pages repo
 
 5. Go to repo **Settings → Pages → Source → main branch → / (root)**
 
-6. Your site goes live at `https://zainulabdin995.github.io` within a few minutes!
+6. Your site goes live at `https://zainulabidinarain.github.io` within a few minutes!
 
 ---
 
