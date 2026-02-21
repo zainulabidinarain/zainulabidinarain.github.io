@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Zain Ul Abidin – AI/ML Researcher & Computer Systems Engineer specializing in Computer Vision, Image Processing, and Deep Learning." />
+  <meta name="author" content="Zain Ul Abidin" />
+  <title>Zain Ul Abidin · AI/ML Researcher</title>
+
+  <!-- ================================
+       FONTS
+       Playfair Display: elegant serif for headings
+       DM Sans: clean humanist sans for body
+  ================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================================
+       BACKGROUND TEXTURE LAYER
+  ================================ -->
+  <div class="bg-grain" aria-hidden="true"></div>
+  <div class="bg-gradient-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- ================================
+       NAVIGATION
+  ================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- Logo / monogram -->
+      <a href="#home" class="nav-logo" aria-label="Home">
+        <span class="logo-text">ZUA</span>
+        <span class="logo-dot" aria-hidden="true"></span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme toggle button -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+          <span class="theme-icon theme-icon--dark">☀</span>
+          <span class="theme-icon theme-icon--light">☽</span>
+        </button>
+        <!-- Hamburger for mobile -->
+        <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="nav-drawer" id="navDrawer" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ================================
+         HERO SECTION
+    ================================ -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+
+        <!-- Profile image column -->
+        <div class="hero-image-wrap reveal reveal-left">
+          <div class="hero-image-frame">
+            <!--
+              CUSTOMIZATION: Replace 'assets/profile.jpg' with your actual photo.
+              Recommended size: 400×400px, square crop.
+            -->
+            <img
+              src="assets/profile2.jpg"
+              alt="Portrait of Zain Ul Abidin"
+              class="hero-image"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <!-- Fallback avatar shown when image is missing -->
+            <div class="hero-image-fallback" aria-hidden="true">
+              <span>ZUA</span>
+            </div>
+          </div>
+          <!-- Decorative ring -->
+          <div class="hero-ring" aria-hidden="true"></div>
+          <!-- Status badge -->
+          <div class="status-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            Open to Research Opportunities
+          </div>
+        </div>
+
+        <!-- Hero text column -->
+        <div class="hero-text reveal reveal-right">
+          <p class="hero-eyebrow">Computer Systems Engineer · AI Researcher</p>
+          <h1 class="hero-name">
+            Zain Ul Abidin<br />
+          </h1>
+          <p class="hero-bio">
+            Advancing AI research in <strong>computer vision</strong>, <strong>image processing</strong>,
+            and <strong>deep learning</strong> - from defect detection in CFRP composites to
+            image super-resolution. CGPA 3.80 · Sukkur IBA University · Pakistan.
+          </p>
+
+          <!-- Quick stats -->
+          <div class="hero-stats" role="list">
+            <div class="stat" role="listitem">
+              <span class="stat-num">6</span>
+              <span class="stat-label">Publications<br/><small>(incl. under review)</small></span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-num">12+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-num">3.80</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat" role="listitem">
+              <span class="stat-num">20+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+
+          <!-- CTA buttons -->
+          <div class="hero-ctas">
+            <a href="#research" class="btn btn-primary">View Research</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            <!-- 
+              CUSTOMIZATION: Replace with your actual CV link 
+            -->
+            <a href="assets/CV.pdf" class="btn btn-ghost" target="_blank" rel="noopener">
+              ↓ Download CV
+            </a>
+          </div>
+
+          <!-- Social links -->
+          <div class="hero-socials">
+            <a href="https://github.com/zainulabidinarain" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.7 18 5 18 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/zainulabidinarain/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.25 6.5 1.78 1.78 0 0 1 6.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.66.66 0 0 0 0 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://www.researchgate.net/profile/Zain-Ul-Abidin-13" class="social-link" target="_blank" rel="noopener" aria-label="ResearchGate">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 0H4.4A4.4 4.4 0 0 0 0 4.4v15.2A4.4 4.4 0 0 0 4.4 24h15.2a4.4 4.4 0 0 0 4.4-4.4V4.4A4.4 4.4 0 0 0 19.6 0zm-5.1 18.3h-2.1v-5.1H9.8V18.3H7.7V5.7h2.1v5.4h2.6V5.7h2.1v12.6zm5.2-6.7h-1.4v2.5h1.4c.7 0 1.2-.5 1.2-1.2s-.5-1.3-1.2-1.3zm.2 4.2h-1.6v2.5h-2.1V5.7h3.7c1.9 0 3.3 1.4 3.3 3.3 0 1.7-1.2 3.1-3.3 3.8v-.2z"/></svg>
+              ResearchGate
+            </a>
+            <a href="https://www.kaggle.com/thezaynetic" class="social-link" target="_blank" rel="noopener" aria-label="Kaggle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.334z"/></svg>
+              Kaggle
+            </a>
+            <a href="https://orcid.org/0009-0008-2708-0385" class="social-link" target="_blank" rel="noopener" aria-label="ORCID">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm-1.374 4.584c.512 0 .928.416.928.928s-.416.928-.928.928-.928-.416-.928-.928.416-.928.928-.928zM9.4 8.272h1.872V18.72H9.4V8.272zm2.864 0h5.568c2.896 0 4.368 2.08 4.368 5.224 0 3.2-1.472 5.224-4.368 5.224H12.264V8.272zm1.872 1.6v7.232h3.552c1.952 0 2.64-1.504 2.64-3.616 0-2.08-.688-3.616-2.64-3.616h-3.552z"/></svg>
+              ORCID
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ================================
+         ABOUT / SKILLS SECTION
+    ================================ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Background</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio reveal reveal-left">
+            <p>
+              I am a final-year <strong>Computer Systems Engineering</strong> student at Sukkur IBA University,
+              graduating in June 2026, with a CGPA of <strong>3.80/4.00</strong>. My research sits at the
+              intersection of deep learning, non-destructive evaluation, and signal processing.
+            </p>
+            <p>
+              I work on automated defect inspection in CFRP composites using thermographic imaging,
+              image super-resolution with hybrid wavelet-transformer architectures, and real-time
+              audio/speech processing systems. I am the recipient of the <strong>Prime Minister's Laptop Award</strong>
+              and the <strong>Sindh Educational Endowment Fund (SEEF) Scholarship</strong>.
+            </p>
+            <p>
+              My goal is to pursue graduate research, bridging the gap between foundational ML theory
+              and real-world industrial applications - particularly in computer vision and intelligent
+              embedded systems.
+            </p>
+
+            <!-- Education card -->
+            <div class="edu-card">
+              <div class="edu-icon" aria-hidden="true">🎓</div>
+              <div>
+                <strong>B.Eng. Computer Systems Engineering</strong>
+                <p>Sukkur IBA University &nbsp;·&nbsp; Sep 2022 – Jun 2026</p>
+                <p class="edu-meta">CGPA: 3.80 / 4.00 &nbsp;·&nbsp; PEC Accredited (Washington Accord)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills column -->
+          <div class="skills-wrap reveal reveal-right">
+            <h3 class="skills-heading">Core Competencies</h3>
+
+            <!-- Skill category chips -->
+            <div class="skill-group">
+              <span class="skill-group-label">AI / ML</span>
+              <div class="skill-chips">
+                <span class="chip">Deep Learning</span>
+                <span class="chip">Computer Vision</span>
+                <span class="chip">Object Detection</span>
+                <span class="chip">Image Super-Resolution</span>
+                <span class="chip">Transfer Learning</span>
+                <span class="chip">Transformers</span>
+                <span class="chip">LSTM / RNN</span>
+                <span class="chip">Reinforcement Learning</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <span class="skill-group-label">Signal & Image Processing</span>
+              <div class="skill-chips">
+                <span class="chip">DSP</span>
+                <span class="chip">Wavelet Transform</span>
+                <span class="chip">Spectral Analysis</span>
+                <span class="chip">Feature Extraction</span>
+                <span class="chip">Thermographic Imaging</span>
+                <span class="chip">NDE / NDT</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <span class="skill-group-label">Languages & Tools</span>
+              <div class="skill-chips">
+                <span class="chip">Python</span>
+                <span class="chip">MATLAB</span>
+                <span class="chip">TensorFlow</span>
+                <span class="chip">PyTorch</span>
+                <span class="chip">OpenCV</span>
+                <span class="chip">Scikit-Learn</span>
+                <span class="chip">NumPy / Pandas</span>
+                <span class="chip">Streamlit</span>
+                <span class="chip">MySQL / SQLite</span>
+                <span class="chip">Git / GitHub</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <span class="skill-group-label">Hardware & IoT</span>
+              <div class="skill-chips">
+                <span class="chip">ESP32</span>
+                <span class="chip">Embedded Systems</span>
+                <span class="chip">Verilog / FSM</span>
+                <span class="chip">TensorFlow Lite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+         RESEARCH / PUBLICATIONS SECTION
+    ================================ -->
+    <section class="section section-alt" id="research">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Academic Work</span>
+          <h2 class="section-title">Research & Publications</h2>
+          <p class="section-subtitle">
+            Focused on non-destructive evaluation, thermographic imaging, and deep learning for industrial inspection.
+          </p>
+        </div>
+
+        <div class="publications-list">
+
+          <!-- Publication 1 -->
+          <article class="pub-card reveal" data-status="published">
+            <div class="pub-header">
+              <span class="pub-badge pub-badge--published">Published</span>
+              <span class="pub-venue">IJMCP, Vol. 2(1)</span>
+            </div>
+            <h3 class="pub-title">
+              Mitigation of DDoS Attacks with Machine Learning, Deep Learning, and Transformers
+            </h3>
+            <p class="pub-authors">
+              <strong>Zain Ul Abidin</strong>, Haseeb, Muhammad Younis, Habeeban Memon, Junaid Ahmed Bhatti
+            </p>
+            <p class="pub-abstract">
+              Evaluates ML/DL models - including LightGBM and XGBoost - for multi-class DDoS detection
+              using the CICDDoS2019 dataset. Tree-based models achieved highest accuracy with fast execution,
+              making them suitable for real-time cybersecurity applications.
+            </p>
+            <div class="pub-footer">
+              <a href="https://doi.org/10.61503/Ijmcp.v2i1.181" class="pub-link" target="_blank" rel="noopener">
+                DOI: 10.61503/Ijmcp.v2i1.181 ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Publication 2 -->
+          <article class="pub-card reveal" data-status="review">
+            <div class="pub-header">
+              <span class="pub-badge pub-badge--review">Under Review</span>
+              <span class="pub-venue">Nondestructive Testing & Evaluation · Taylor & Francis</span>
+            </div>
+            <h3 class="pub-title">
+              Metal Defect Detection in Pulsed Thermographic Imaging via Temporal Eigen Projection and Robust Low-Rank Tensor Completion Model
+            </h3>
+            <p class="pub-authors">
+              <strong>Zain Ul Abidin</strong>, Junaid Ahmed, Dong Wang, Guiyun Tian
+            </p>
+            <p class="pub-abstract">
+              Introduces the "Eigen-RHOTC" framework to identify surface cracks in metallic parts using
+              Eddy Current Pulsed Thermography (ECPT). Combines temporal eigen projection with robust
+              higher-order tensor completion, significantly outperforming existing methods in SNR and
+              computational speed. Submission ID: 255311532.
+            </p>
+          </article>
+
+          <!-- Publication 3 -->
+          <article class="pub-card reveal" data-status="review">
+            <div class="pub-header">
+              <span class="pub-badge pub-badge--review">Under Review</span>
+              <span class="pub-venue">Quantitative InfraRed Thermography Journal · Taylor & Francis</span>
+            </div>
+            <h3 class="pub-title">
+              Eddy Current Pulsed Thermography Based Efficient Defect Detection in Metals via Keyframe Extraction and Accelerated Sparse Decomposition
+            </h3>
+            <p class="pub-authors">
+              Junaid Ahmed, <strong>Zain Ul Abidin</strong>, Guiyun Tian, Dong Wang
+            </p>
+            <p class="pub-abstract">
+              Proposes a rapid defect detection methodology using entropy and density clustering for keyframe
+              extraction, significantly reducing processing load, with accelerated CUR decomposition for
+              isolating weak defect signals from noise. Submission ID: 254751271.
+            </p>
+          </article>
+
+          <!-- Publication 4 -->
+          <article class="pub-card reveal" data-status="accepted">
+            <div class="pub-header">
+              <span class="pub-badge pub-badge--accepted">Accepted · IEEE Xplore</span>
+              <span class="pub-venue">iCoMET Conference</span>
+            </div>
+            <h3 class="pub-title">
+              Debond Detection in CFRP Structures using Optical Pulse Thermography and Deep Learning
+            </h3>
+            <p class="pub-authors">
+              Habeeban Memon, <strong>Zain Ul Abidin</strong>, Junaid Ahmed, Ayesha Siddiqua
+            </p>
+            <p class="pub-abstract">
+              Evaluates YOLOv8, Faster R-CNN, and Mask R-CNN for automated debond detection in CFRP
+              composites. YOLOv8 is optimal for rapid screening; Mask R-CNN achieves highest accuracy
+              with pixel-wise defect segmentation. Indexed in EI Compendex.
+            </p>
+          </article>
+
+          <!-- Publication 5 -->
+          <article class="pub-card reveal" data-status="review">
+            <div class="pub-header">
+              <span class="pub-badge pub-badge--review">Under Review</span>
+              <span class="pub-venue">Image and Vision Computing · Elsevier</span>
+            </div>
+            <h3 class="pub-title">
+              Improving Image Super-Resolution: A Hybrid Approach Using DT-CWT and Transformer Networks
+            </h3>
+            <p class="pub-authors">
+              Dr. Pan Zhiwen, Faisal Sahito, Aakash Kumar, Dr. Junaid Ahmed, <strong>Zain Ul Abidin</strong>
+            </p>
+            <p class="pub-abstract">
+              Presents a hybrid deep learning architecture combining Dual-Tree Complex Wavelet Transform
+              (DT-CWT) with Transformer networks to significantly enhance image super-resolution capabilities
+              and high-frequency detail retention.
+            </p>
+          </article>
+
+          <!-- Publication 6 -->
+          <article class="pub-card reveal" data-status="preparation">
+            <div class="pub-header">
+              <span class="pub-badge pub-badge--prep">In Preparation</span>
+              <span class="pub-venue">Manuscript Writing</span>
+            </div>
+            <h3 class="pub-title">
+              Automated Defect Detection in CFRP Composites Using Multi-Modal Thermal Representations and Deep Learning
+            </h3>
+            <p class="pub-authors">
+              <strong>Zain Ul Abidin</strong>, Habeeban Memon, Junaid Ahmed, Ayesha Siddiqua
+            </p>
+            <p class="pub-abstract">
+              Introduces a three-channel thermal representation embedding raw spatial intensity, PCA variance
+              structure, and thermographic signal reconstruction dynamics into unified tensors. Achieves up to
+              154% relative gains in segmentation accuracy with physics-informed depth estimation for 3D
+              defect reconstruction.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+         PROJECTS SECTION
+    ================================ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Engineering</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">A selection of ML, embedded, and software engineering projects.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">🔊</span>
+              <div class="project-tags">
+                <span class="tag">LSTM</span><span class="tag">Audio ML</span><span class="tag">Real-Time</span>
+              </div>
+            </div>
+            <h3>RealTime Speech Emotion Recognition</h3>
+            <p>
+              LSTM-based Speech Emotion Recognition system trained on TESS dataset with data augmentation
+              (noise addition, time shifting) for robustness in real-world environments.
+            </p>
+            <a href="https://github.com/zainulabidinarain/speech-emotion-recognition-lstm" class="project-link" target="_blank" rel="noopener">
+              View on GitHub ↗
+            </a>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">🤖</span>
+              <div class="project-tags">
+                <span class="tag">ESP32</span><span class="tag">TF Lite</span><span class="tag">Android</span>
+              </div>
+            </div>
+            <h3>AI-Based Android Controlled Vision Robot</h3>
+            <p>
+              Custom mobile robot with ESP32-CAM streaming live video to Android app using TensorFlow Lite
+              for real-time on-device object detection - efficient, low-cost intelligent robotics.
+            </p>
+            <a href="https://github.com/zainulabidinarain/ai-vision-robot-esp32" class="project-link" target="_blank" rel="noopener">
+              View on GitHub ↗
+            </a>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">🤟</span>
+              <div class="project-tags">
+                <span class="tag">CNN</span><span class="tag">SVM</span><span class="tag">TTS</span>
+              </div>
+            </div>
+            <h3>Hand Gesture Recognition & Voice Conversion</h3>
+            <p>
+              Assistive system for speech/hearing-impaired users. CNN + SVM pipeline classifies sign language
+              gestures from webcam frames; predicted text dynamically converted to audio speech.
+            </p>
+            <a href="https://github.com/zainulabidinarain/hand-gesture-voice-conversion" class="project-link" target="_blank" rel="noopener">
+              View on GitHub ↗
+            </a>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">📈</span>
+              <div class="project-tags">
+                <span class="tag">XGBoost</span><span class="tag">LSTM</span><span class="tag">Random Forest</span>
+              </div>
+            </div>
+            <h3>Gold Price Prediction & Forecasting Dashboard</h3>
+            <p>
+              End-to-end time-series forecasting using an ensemble of XGBoost, LSTM, and Random Forest
+              to analyze historical market data and project future gold price trends.
+            </p>
+            <a href="https://github.com/zainulabidinarain/gold-price-prediction" class="project-link" target="_blank" rel="noopener">
+              View on GitHub ↗
+            </a>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">🏠</span>
+              <div class="project-tags">
+                <span class="tag">IoT</span><span class="tag">ESP32</span><span class="tag">Cloud</span>
+              </div>
+            </div>
+            <h3>Smart SyncEdge IoT Home Automation</h3>
+            <p>
+              End-to-end IoT smart home platform with ESP32 microcontroller, web dashboards, mobile apps,
+              and voice assistant integration (Google Home, Amazon Alexa) for high-voltage appliance control.
+            </p>
+            <a href="https://github.com/zainulabidinarain/smart-syncedge-iot-home" class="project-link" target="_blank" rel="noopener">
+              View on GitHub ↗
+            </a>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">🖼️</span>
+              <div class="project-tags">
+                <span class="tag">DSP</span><span class="tag">JPEG</span><span class="tag">Wavelet</span>
+              </div>
+            </div>
+            <h3>Image Compression Analysis: JPEG vs JPEG2000</h3>
+            <p>
+              DSP project implementing and comparing JPEG (DCT) and JPEG2000 (DWT) lossy image compression
+              algorithms with quantitative quality metric evaluation.
+            </p>
+            <a href="https://github.com/zainulabidinarain/image-compression-analysis" class="project-link" target="_blank" rel="noopener">
+              View on GitHub ↗
+            </a>
+          </article>
+
+          <!-- Project 7 -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">🎙️</span>
+              <div class="project-tags">
+                <span class="tag">Wiener Filter</span><span class="tag">Spectral Subtraction</span>
+              </div>
+            </div>
+            <h3>Real-Time Speech Enhancement</h3>
+            <p>
+              Captures noisy speech, estimates background noise profile, and applies Spectral Subtraction
+              + Wiener Filtering to improve speech intelligibility in telecoms and voice-activated environments.
+            </p>
+            <a href="https://github.com/zainulabidinarain/speech-enhancement-wiener-filter" class="project-link" target="_blank" rel="noopener">
+              View on GitHub ↗
+            </a>
+          </article>
+
+          <!-- Project 8 -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">🏫</span>
+              <div class="project-tags">
+                <span class="tag">MySQL</span><span class="tag">Predictive Analytics</span>
+              </div>
+            </div>
+            <h3>Student Management System with ML Integration</h3>
+            <p>
+              Desktop application with role-based access (Admin, Teacher, Student, Parent), MySQL integration,
+              and embedded ML module providing predictive analytics on student academic outcomes.
+            </p>
+            <a href="https://github.com/zainulabidinarain/student-management-system-ml" class="project-link" target="_blank" rel="noopener">
+              View on GitHub ↗
+            </a>
+          </article>
+
+          <!-- Project 9 -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">🚦</span>
+              <div class="project-tags">
+                <span class="tag">Verilog</span><span class="tag">FSM</span><span class="tag">FPGA</span>
+              </div>
+            </div>
+            <h3>Smart Traffic Light Controller (Mealy FSM)</h3>
+            <p>
+              Sensor-driven adaptive traffic light controller built with a Mealy Finite State Machine in
+              Verilog - detects vehicle presence and dynamically adjusts traffic outputs.
+            </p>
+            <a href="https://github.com/zainulabidinarain/smart-traffic-light-fsm-verilog" class="project-link" target="_blank" rel="noopener">
+              View on GitHub ↗
+            </a>
+          </article>
+
+          <!-- Project 10 -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">⚡</span>
+              <div class="project-tags">
+                <span class="tag">Streamlit</span><span class="tag">SQLite</span><span class="tag">GIS</span>
+              </div>
+            </div>
+            <h3>SEPCO Mute Meter Monitoring Dashboard</h3>
+            <p>
+              Web-based dashboard (Python, Streamlit, SQLite) for SEPCO's MIS department - digitizes
+              identification and tracking of non-communicative meters with GIS filters and bulk import/export.
+              Reduced manual inspections by 40%.
+            </p>
+            <a href="https://github.com/zainulabidinarain/sepco-mute-meter-dashboard" class="project-link" target="_blank" rel="noopener">
+              View on GitHub ↗
+            </a>
+          </article>
+
+          <!-- Project 11 -->
+          <article class="project-card reveal">
+            <div class="project-card-header">
+              <span class="project-icon" aria-hidden="true">🔬</span>
+              <div class="project-tags">
+                <span class="tag">YOLO</span><span class="tag">Segmentation</span><span class="tag">NDE</span>
+              </div>
+            </div>
+            <h3>OPT Defect Detection, Segmentation & Depth Inspection Framework</h3>
+            <p>
+              Complete framework for automated detection, segmentation, and depth estimation of subsurface
+              defects in CFRP composites using Optical Pulse Thermography - combining object detection,
+              semantic segmentation, and ML regression for depth prediction.
+            </p>
+            <a href="https://github.com/zainulabidinarain/OPT_Defect_Inspection_Framework" class="project-link" target="_blank" rel="noopener">
+              View on GitHub ↗
+            </a>
+          </article>
+
+        </div>
+
+        <div class="projects-cta reveal">
+          <a href="https://github.com/zainulabidinarain" class="btn btn-outline" target="_blank" rel="noopener">
+            View All Repositories on GitHub ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+         EXPERIENCE SECTION
+    ================================ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Career</span>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Experience 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-period">Jul 2025 – Aug 2025</span>
+                <span class="timeline-type">Remote · Internship</span>
+              </div>
+              <h3 class="timeline-role">Artificial Intelligence Intern</h3>
+              <h4 class="timeline-org">Mirai School of Technology</h4>
+              <ul class="timeline-bullets">
+                <li>Built a Conversational Order Assistant using Agentic AI workflows (n8n, Gemini AI)</li>
+                <li>Automated order capture, validation, logging, and email confirmations via APIs</li>
+                <li>Gained practical experience in ML deployment, prompt engineering, and AI automation</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">n8n</span><span class="tag">Gemini AI</span><span class="tag">Agentic AI</span><span class="tag">Prompt Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-period">Jun 2025 – Jul 2025</span>
+                <span class="timeline-type">Sukkur, Sindh · On-Site</span>
+              </div>
+              <h3 class="timeline-role">Software Engineering Intern</h3>
+              <h4 class="timeline-org">Sukkur Electric Power Company (SEPCO)</h4>
+              <ul class="timeline-bullets">
+                <li>Developed Mute Meter Monitoring Dashboard (Python, Streamlit, SQLite) with role-based access control</li>
+                <li>Implemented GIS filters and bulk import/export, reducing manual inspection workload by 40%</li>
+                <li>Digitized meter monitoring operations for enhanced efficiency and traceability</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">SQLite</span><span class="tag">GIS</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Honors -->
+        <div class="honors-row reveal">
+          <h3 class="honors-heading">Honors & Achievements</h3>
+          <div class="honors-grid">
+            <div class="honor-card">
+              <span class="honor-icon" aria-hidden="true">🏆</span>
+              <div>
+                <strong>Prime Minister's Laptop Award</strong>
+                <p>Merit-based national recognition for academic excellence</p>
+              </div>
+            </div>
+            <div class="honor-card">
+              <span class="honor-icon" aria-hidden="true">🎓</span>
+              <div>
+                <strong>SEEF Scholarship</strong>
+                <p>Sindh Educational Endowment Fund – Merit-based full tuition coverage</p>
+              </div>
+            </div>
+            <div class="honor-card">
+              <span class="honor-icon" aria-hidden="true">⭐</span>
+              <div>
+                <strong>Top Academic Rank</strong>
+                <p>Consistently ranked among top students, CGPA 3.80 / 4.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+         CERTIFICATIONS SECTION
+    ================================ -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">Professional certifications from Coursera, Udemy, and IBM.</p>
+        </div>
+
+        <div class="certs-grid">
+
+          <!-- Cert 1 -->
+          <a href="https://www.coursera.org/account/accomplishments/specialization/5O3F5420P4V4" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">DeepLearning.AI · Coursera</div>
+            <h3>Mathematics for ML & Data Science Specialization</h3>
+            <p>Linear Algebra, Calculus, Probability & Statistics for ML - full specialization.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 2 -->
+          <a href="https://www.coursera.org/account/accomplishments/specialization/EHR0490LB8HZ" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">Stanford / DeepLearning.AI · Coursera</div>
+            <h3>Machine Learning Specialization</h3>
+            <p>Supervised & unsupervised learning, neural networks, decision trees, recommender systems, RL.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 3 -->
+          <a href="https://www.coursera.org/account/accomplishments/records/DIZNKBPFU1E7" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">DeepLearning.AI · Coursera</div>
+            <h3>Probability & Statistics for Machine Learning & Data Science</h3>
+            <p>MLE, MAP estimation, confidence intervals, probability distributions for ML.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 4 -->
+          <a href="https://www.coursera.org/account/accomplishments/records/RT4W9C8JD1V7" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">DeepLearning.AI · Coursera</div>
+            <h3>Calculus for Machine Learning and Data Science</h3>
+            <p>Derivatives, gradients, gradient descent in neural networks, optimization.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 5 -->
+          <a href="https://www.coursera.org/account/accomplishments/records/CPCY0OE81QDY" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">DeepLearning.AI · Coursera</div>
+            <h3>Linear Algebra for Machine Learning and Data Science</h3>
+            <p>Vectors, matrices, eigenvalues, eigenvectors, dimensionality reduction.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 6 -->
+          <a href="https://www.coursera.org/account/accomplishments/specialization/ERAD0L1U9KLI" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">Google · Coursera</div>
+            <h3>Google Prompting Essentials Specialization</h3>
+            <p>Effective prompting, data analysis with AI, prompt engineering, LLM workflows.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 7 -->
+          <a href="https://www.coursera.org/account/accomplishments/specialization/2BHXV4AAFW33" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">Google · Coursera</div>
+            <h3>Google IT Support Professional Certificate</h3>
+            <p>IT support, networking, Linux, systems administration, security fundamentals.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 8 -->
+          <a href="https://www.udemy.com/certificate/UC-bae760c2-4871-4180-b988-266be4c8a3ea/" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">Udemy</div>
+            <h3>Large Language Models</h3>
+            <p>Tokenization, vectorization, fine-tuning, deploying LLMs locally and via APIs.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 9 -->
+          <a href="https://www.coursera.org/account/accomplishments/records/2MEL1HTTUYDW" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">DeepLearning.AI · Coursera</div>
+            <h3>Advanced Learning Algorithms</h3>
+            <p>TensorFlow neural networks, decision trees, random forests, boosted trees.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 10 -->
+          <a href="https://www.coursera.org/account/accomplishments/records/RSNHCRA6F79S" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">DeepLearning.AI · Coursera</div>
+            <h3>Unsupervised Learning, Recommenders, Reinforcement Learning</h3>
+            <p>Clustering, anomaly detection, collaborative filtering, deep RL.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 11 -->
+          <a href="https://www.coursera.org/account/accomplishments/records/1UGZDKTVЕ2XD" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">DeepLearning.AI · Coursera</div>
+            <h3>Supervised ML: Regression and Classification</h3>
+            <p>Linear/logistic regression, feature engineering, NumPy, scikit-learn.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 12 -->
+          <a href="https://www.coursera.org/account/accomplishments/records/IASTGDX4D6ET" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">Google · Coursera</div>
+            <h3>IT Security: Defense Against the Digital Dark Arts</h3>
+            <p>Cryptography, network security, authentication, malware protection, threat detection.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 13 -->
+          <a href="https://www.linkedin.com/learning/certificates/fefe715eaab5c3c4847d831e6c17b28ef9f66b1e56687ddf449d28fa5964c35e" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">GitHub · LinkedIn Learning</div>
+            <h3>Career Essentials in GitHub Professional Certificate</h3>
+            <p>GitHub Actions automation, GitHub Copilot, real-project practice.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 14 -->
+          <a href="https://www.udemy.com/certificate/UC-fc609dc6-3006-40c2-a533-c507c2ba4de2/" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">Udemy</div>
+            <h3>SQL for Developers, Data Analysts & BI - MySQL for Everyone</h3>
+            <p>Database design, normal forms, complex JOINs, UNION queries, real-world use cases.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 15 -->
+          <a href="https://courses.cognitiveclass.ai/certificates/be77058b773a43498a153a969070a1f9" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">IBM · CognitiveClass.ai</div>
+            <h3>Python 101 for Data Science</h3>
+            <p>Python fundamentals, scripting, and hands-on data analysis with Jupyter.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 16 -->
+          <a href="https://www.coursera.org/account/accomplishments/records/VTH1LF5LHXHE" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">Google · Coursera</div>
+            <h3>Accelerate Your Job Search with AI</h3>
+            <p>Resume building, interview prep, job search automation with Gemini and NotebookLM.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 17 -->
+          <a href="https://www.coursera.org/account/accomplishments/records/3CCW32VBH2QN" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">Google · Coursera</div>
+            <h3>System Administration & IT Infrastructure Services</h3>
+            <p>Windows Server, Active Directory, Linux admin, cloud management, disaster recovery.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+          <!-- Cert 18 -->
+          <a href="https://www.coursera.org/account/accomplishments/records/J12S0L3JNPFZ" class="cert-card reveal" target="_blank" rel="noopener">
+            <div class="cert-issuer">Google · Coursera</div>
+            <h3>The Bits and Bytes of Computer Networking</h3>
+            <p>TCP/IP, OSI model, DHCP, routing, network security, troubleshooting.</p>
+            <span class="cert-arrow">↗</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================
+         CONTACT SECTION
+    ================================ -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Open to research collaborations, graduate opportunities, and internship discussions.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal reveal-left">
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <a href="mailto:zainulabdin995@gmail.com" class="contact-value">zainulabdin995@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">University Email</span>
+              <a href="mailto:zainulabidinarain.becsef22@iba-suk.edu.pk" class="contact-value">zainulabidinarain.becsef22@iba-suk.edu.pk</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+923048362390" class="contact-value">+92 304 836 2390</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Sukkur, Sindh, Pakistan</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">ORCID</span>
+              <a href="https://orcid.org/0009-0008-2708-0385" class="contact-value" target="_blank" rel="noopener">
+                0009-0008-2708-0385
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-links reveal reveal-right">
+            <h3>Find me online</h3>
+            <div class="contact-socials">
+              <a href="https://github.com/zainulabidinarain" class="contact-social-btn" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.7 18 5 18 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/zainulabidinarain/" class="contact-social-btn" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.25 6.5 1.78 1.78 0 0 1 6.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.66.66 0 0 0 0 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://www.researchgate.net/profile/Zain-Ul-Abidin-13" class="contact-social-btn" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 0H4.4A4.4 4.4 0 0 0 0 4.4v15.2A4.4 4.4 0 0 0 4.4 24h15.2a4.4 4.4 0 0 0 4.4-4.4V4.4A4.4 4.4 0 0 0 19.6 0zm-5.1 18.3h-2.1v-5.1H9.8V18.3H7.7V5.7h2.1v5.4h2.6V5.7h2.1v12.6zm5.2-6.7h-1.4v2.5h1.4c.7 0 1.2-.5 1.2-1.2s-.5-1.3-1.2-1.3zm.2 4.2h-1.6v2.5h-2.1V5.7h3.7c1.9 0 3.3 1.4 3.3 3.3 0 1.7-1.2 3.1-3.3 3.8v-.2z"/></svg>
+                ResearchGate
+              </a>
+              <a href="https://www.kaggle.com/thezaynetic" class="contact-social-btn" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.334z"/></svg>
+                Kaggle
+              </a>
+              <a href="https://orcid.org/0009-0008-2708-0385" class="contact-social-btn" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm-1.374 4.584c.512 0 .928.416.928.928s-.416.928-.928.928-.928-.416-.928-.928.416-.928.928-.928zM9.4 8.272h1.872V18.72H9.4V8.272zm2.864 0h5.568c2.896 0 4.368 2.08 4.368 5.224 0 3.2-1.472 5.224-4.368 5.224H12.264V8.272zm1.872 1.6v7.232h3.552c1.952 0 2.64-1.504 2.64-3.616 0-2.08-.688-3.616-2.64-3.616h-3.552z"/></svg>
+                ORCID
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================
+       FOOTER
+  ================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>
+        &copy; <span id="footerYear"></span> Zain Ul Abidin
+        <span class="footer-sep" aria-hidden="true">·</span>
+        Sukkur, Sindh, Pakistan
+      </p>
+      <p class="footer-note">Built with HTML5, CSS3 &amp; vanilla JS · Hosted on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <!-- ================================
+       SCROLL-TO-TOP BUTTON
+  ================================ -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top" title="Back to top">↑</button>
+
+  <!-- ================================
+       JAVASCRIPT
+       All JS is vanilla – no dependencies
+  ================================ -->
+  <script>
+    // ── Theme toggle ──────────────────────────────────────────────
+    const html = document.documentElement;
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    // ── Mobile nav ────────────────────────────────────────────────
+    const hamburger = document.getElementById('navHamburger');
+    const drawer = document.getElementById('navDrawer');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !open);
+      hamburger.classList.toggle('active');
+      drawer.classList.toggle('open');
+      drawer.setAttribute('aria-hidden', open);
+    });
+    // Close drawer on link click
+    drawer.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.classList.remove('active');
+        drawer.classList.remove('open');
+        drawer.setAttribute('aria-hidden', 'true');
+      });
+    });
+
+    // ── Navbar scroll state ───────────────────────────────────────
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    // ── Scroll reveal (IntersectionObserver) ─────────────────────
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => revealObs.observe(el));
+
+    // ── Scroll-to-top button ──────────────────────────────────────
+    const scrollTopBtn = document.getElementById('scrollTop');
+    window.addEventListener('scroll', () => {
+      scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ── Footer year ───────────────────────────────────────────────
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+    // ── Smooth active nav link highlighting ──────────────────────
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const activeObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+          });
+        }
+      });
+    }, { threshold: 0.35 });
+    sections.forEach(s => activeObs.observe(s));
+  </script>
+
+</body>
+</html>
