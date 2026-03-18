@@ -4,7 +4,7 @@ A clean, dark-academic personal portfolio for GitHub Pages.
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 
 ```
 your-github-username.github.io/          ← root of GitHub Pages repo
@@ -18,10 +18,10 @@ your-github-username.github.io/          ← root of GitHub Pages repo
 
 ---
 
-## 🚀 GitHub Pages Deployment
+##  GitHub Pages Deployment
 
 1. **Create a repo** named `<your-github-username>.github.io`  
-   (e.g., `zainulabdin995.github.io`)
+   (e.g., `zainulabidinarain.github.io`)
 
 2. **Upload all files** maintaining the folder structure above.
 
@@ -37,7 +37,7 @@ your-github-username.github.io/          ← root of GitHub Pages repo
 
 ---
 
-## 🎨 Customization Guide
+##  Customization Guide
 
 ### Colors (in `style.css` `:root`)
 ```css
@@ -59,7 +59,7 @@ Replace the Google Fonts link in `<head>` and update `--font-display` and `--fon
 
 ---
 
-## ✅ Features
+##  Features
 
 - **Dark / Light theme** — toggleable, preference saved in localStorage
 - **Smooth scroll reveal** animations (IntersectionObserver, no JS library)
@@ -71,8 +71,8 @@ Replace the Google Fonts link in `<head>` and update `--font-display` and `--fon
 
 ---
 
-## 📧 Contact
+##  Contact
 
 - Email: zainulabdin995@gmail.com  
 - LinkedIn: https://www.linkedin.com/in/zainulabidinarain/  
-- GitHub: https://github.com/zainulabdin995
+- GitHub: https://github.com/zainulabidinarain
